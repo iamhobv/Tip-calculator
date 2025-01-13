@@ -123,5 +123,18 @@ function totPer() {
 }
 
 resetBtn.addEventListener("click", function () {
-  location.reload();
+  billAmount.value = 0;
+  numOfPll.value = 0;
+  customPercent.value = "";
+  billValue = 0;
+  tipFlag = 0;
+  tipPercent = 5;
+  customPercentVal = 0;
+  numOfPllVal = 0;
+  totTip = 0;
+
+  percents[0].classList.add("active");
+
+  calcTip();
+  totPer();
 });
